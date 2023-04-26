@@ -5,6 +5,7 @@ using UnityEngine;
 public class MovementScript : MonoBehaviour
 {
 	public float speed = 2;
+	
 	// Update is called once per frame
 	void Update()
 	{
@@ -13,6 +14,7 @@ public class MovementScript : MonoBehaviour
 		if(transform.position.x <= -20)
 		{
 			transform.position = new Vector2(50, 0);
+		
 			gameObject.SetActive(false);
 		}
 	}

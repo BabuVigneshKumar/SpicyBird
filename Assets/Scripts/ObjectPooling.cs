@@ -9,7 +9,8 @@ public class ObjectPooling : MonoBehaviour
 	public List<GameObject> poolobjects;
 	public GameObject objecttopool;
 	public int AmountPool;
-	private void Awake()
+
+    private void Awake()
 	{
 		sharedinstance = this;
 	}
@@ -24,11 +25,13 @@ public class ObjectPooling : MonoBehaviour
 		{
 			pipe = Instantiate(objecttopool);
 			pipe.transform.position = new Vector2(50, 0);
-			pipe.SetActive(false);
-		
-			poolobjects.Add(pipe);
-		}
-	}
+			pipe.SetActive(false);	
+            poolobjects.Add(pipe);
+        
+
+
+        }
+    }
 
 	public GameObject GetPooledObject()
 	{

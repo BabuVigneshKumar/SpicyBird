@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,8 +8,8 @@ public class PlayerScript : MonoBehaviour
 {
 	public Rigidbody2D rb;
 	public GameObject gameover;
-	public Text scoreText;
-	public Text HighscoreText;
+	public TMP_Text scoreText;
+	public TMP_Text HighscoreText;
 	public int Highscore = 0;
 	// public Text LifeText;	
 	public int score = 0;
